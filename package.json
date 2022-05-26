@@ -1,0 +1,39 @@
+{
+  "name": "ycj-ts-challenges",
+  "version": "1.0.0",
+  "description": "ts challenges",
+  "main": "index.js",
+  "types": "y-dts/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:w": "tsc -w",
+    "test": "tsd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YangChaoJie/YCJ-ts-challenges.git"
+  },
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "tsd": "^0.13.1"
+  },
+  "keywords": [
+    "ts"
+  ],
+  "author": "ycj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YangChaoJie/YCJ-ts-challenges/issues"
+  },
+  "tsd": {
+    "directory": "y-dts",
+    "compilerOptions": {
+      "strict": false,
+      "lib": [
+        "esnext",
+        "dom"
+      ]
+    }
+  },
+  "homepage": "https://github.com/YangChaoJie/YCJ-ts-challenges#readme"
+}
