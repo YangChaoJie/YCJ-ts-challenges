@@ -1,16 +1,12 @@
 import { Equal, Expect, NotAny } from "@type-challenges/utils";
+
 interface Todo1 {
   title: string
   description: string
   completed: boolean
 }
 
-type TodoPreview = MyPick<Todo1, 'title' | 'completed'>
 
-const todo: TodoPreview = {
-    title: 'Clean room',
-    completed: false,
-}
 interface Expected1 {
   title: string
 }
