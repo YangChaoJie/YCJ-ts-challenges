@@ -1,0 +1,26 @@
+/*
+  533 - Concat
+  -------
+  by Andrey Krasovsky (@bre30kra69cs) #easy #array
+  
+  ### Question
+  
+  Implement the JavaScript `Array.concat` function in the type system. A type takes the two arguments. The output should be a new array that includes inputs in ltr order
+  
+  For example
+  
+  ```ts
+  type Result = Concat<[1], [2]> // expected to be [1, 2]
+  ```
+  
+  > View on GitHub: https://tsch.js.org/533
+*/
+
+var alpha = ["a", "b", "c"]; 
+var numeric = ['1', '2', '3'];
+
+var alphaNumeric = alpha.concat(numeric); 
+/* _____________ Your Code Here _____________ */
+
+type Concat<T extends any[], U extends any[]> = [...T, ...U]
+type q = Concat<[1, 2], [3, 4]>
