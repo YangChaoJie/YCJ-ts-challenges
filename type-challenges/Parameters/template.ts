@@ -12,5 +12,5 @@
 
 
 /* _____________ Your Code Here _____________ */
-
+// import type { Equal, Expect } from '@type-challenges/utils'
 type MyParameters<T> = T extends (...args: infer U) => any ? U : T;
